@@ -44,8 +44,8 @@ probes that mapped to single genes for the 228 individuals with matched expressi
 
 Monocyte genetic data
 
-Genetic data files were aligned to the human genome assembly hg19 using the Liftover tool: https://genome.ucsc.edu/cgi-bin/hgLiftOver was used to convert the SNP co-ordinates to the hg19 genome assembly. We ran SNP-QC to check the SNPs in each data set using the script HRC-1000G-check-bim-NoReadKey.pl script from McCarthy tools https://www.well.ox.ac.uk/~wrayner/tools/ and the HRC reference SNP list : v1.1 HRC.r1-1.GRCh37.wgs.mac5.sites.tab from the Haplotype Reference Consortium:
-http://www.haplotype-reference-consortium.org/site. We used plink 1.9 http://www.cog-genomics.org/plink/1.9/ for all subsequent SNP- QC and data merging. After merging the two datasets the genetic data for the 228 individuals with matched expression data across all four cell states was extracted. In the final QC SNPs from 228 individuals, SNPs were removed if their minor allele frequency (MAF) < 0.01, missingness of genotypes ≥ 0.02 or HWE < 10−6.  A total of 625793 variants were retained for 228 people.
+Genetic data files were aligned to the human genome assembly hg19 using the Liftover tool: https://genome.ucsc.edu/cgi-bin/hgLiftOver was used to convert the SNP co-ordinates to the hg19 genome assembly. Plink 1.9 http://www.cog-genomics.org/plink/1.9/ was used for standard Quality-Control analysis (Anderson et al., 2010). Genetic data for the 228 individuals with matched expression data across all four cell states was extracted and SNPs were removed if their minor allele frequency (MAF) < 0.01, missingness of genotypes ≥ 0.02 or HWE < 10−6.  A total of 625793 variants were retained for 228 people.
+
 
 Nunber of genes the expression weights:
 
@@ -60,13 +60,8 @@ number of RDat files = 1807
 
 
 
-
-
-
 Fairfax BP, Humburg P, Makino S, Naranbhai V, Wong D, Lau E, Jostins L, Plant K, Andrews R, McGee C, et al. 2014. Innate Immune Activity Conditions the Effect of Regulatory Variants upon Monocyte Gene Expression. Science (80- ) 343: 1246949–1246949. http://www.ncbi.nlm.nih.gov/pubmed/24604202 
-
 
 Fairfax BP, Makino S, Radhakrishnan J, Plant K, Leslie S, Dilthey A, Ellis P, Langford C, Vannberg FO, Knight JC. 2012. Genetics of gene expression in primary immune cells identifies cell type-specific master regulators and roles of HLA alleles. Nat Genet 44: 502–10. http://www.ncbi.nlm.nih.gov/pubmed/22446964 .
 
-
-
+Anderson CA, Pettersson FH, Clarke GM, Cardon LR, Morris AP, Zondervan KT. Data quality control in genetic case-control association studies. Nat Protoc 2010; 5: 1564–1573.
