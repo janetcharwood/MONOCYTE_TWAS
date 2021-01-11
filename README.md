@@ -58,12 +58,12 @@ number of RDat files = 1807
 
 # CTS (Cardiogenics Transcriptomic Study) CD14+ MONOCYTE TWAS WEIGHTS
 
-We computed TWAs weights using an independent monocyte expression data set from the Cardiogenics Transcriptomic Study (CTS) (Garnier et al., 2013). In this study, CD14+ monocytes were purified from 758 individuals (459 patients with coronary artery disease or myocardial infarction and 458 healthy individuals). We used matched genetic and expression data from this study from all 758 individuals to compute an independent set of CD14+ monocyte expression weights. 3163 genes were modelled with significant cis - heritable expression. 
+We computed TWAS weights using an independent monocyte expression data set from the Cardiogenics Transcriptomic Study (CTS) (Garnier et al., 2013). In this study, CD14+ monocytes were purified from 758 individuals (459 patients with coronary artery disease or myocardial infarction and 458 healthy individuals). We used matched genetic and expression data from this study from all 758 individuals to compute an independent set of CD14+ monocyte expression weights. 3163 genes were modelled with significant cis - heritable expression. 
 
 
 We used quality controlled CTS monocyte expression data : file EGAF00000183279/monocyte_expression_subset.txt. (Garnier et al., 2013) We extracted 
-20, 356 autosomal single gene probes and mapped them to the GRCh37 (hg19) genome assembly using the illumina_humanref_8_v3 annotation information using the Biomart package in R (URL.5), expression probes for were collapsed to  15, 344 genes using the 'collapseRows' function from the WGCA package (URL.6) using the MaxMean method (Miller et al., 2011) in R. Genetic data files Cardiogenics (CTS) data sets were aligned to the GRCh37 (hg19) using the Liftover tool (URL.7). Plink 1.9 (URL.8) was used for standard Quality-Control analysis (Anderson et al., 2010). Genetic data for all 758 individuals from the CTS study was used.SNPs were removed if their minor allele frequency (MAF) < 0.01, missingness of genotypes ≥ 0.02 or Hardy Weinberg equilibrium (HWE) < 10−6. For the CTS study, a total of 509, 870 SNPs were retained for 758 people.
-
+20, 356 autosomal single gene probes and mapped them to the GRCh37 (hg19) genome assembly using the illumina_humanref_8_v3 annotation information using the Biomart package in R (URL.5), expression probes for were collapsed to  15, 344 genes using the 'collapseRows' function from the WGCA package (URL.6) using the MaxMean method (Miller et al., 2011) in R. Genetic data files Cardiogenics (CTS) data sets were aligned to the GRCh37 (hg19) using the Liftover tool (URL.7). Plink 1.9 (URL.8) was used for standard Quality-Control analysis (Anderson et al., 2010). Genetic data for all 758 individuals from the CTS study was used. SNPs were removed if their minor allele frequency (MAF) < 0.01, missingness of genotypes ≥ 0.02 or Hardy Weinberg equilibrium (HWE) < 10−6. For the CTS study, a total of 509, 870 SNPs were retained for 758 people.
+Expression weights were computed using the Fusion software, as for teh Fairfax data above.
 
 
 References
