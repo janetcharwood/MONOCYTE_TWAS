@@ -1,4 +1,4 @@
-# MONOCYTE_TWAS
+# FAIRFAX MONOCYTE_TWAS
 TWAS weights were computed from four monocyte cell strains.
 
 Monocyte expression data was downloaded from array express (https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-2232/).  The corresponding genetic data was obtained from Dr Julian Knight University of Oxford under Licence  (Fairfax et al., 2012, 2014, Naranbhai et al., 2015a, b) 
@@ -55,6 +55,17 @@ number of RDat files = 1579
 Fairfax_IFN_QC
 number of RDat files = 1807
 
+
+# CTS (Cardiogenics Transcriptomic Study) CD14+ MONOCYTE TWAS WEIGHTS
+
+We computed TWAs weights using an independent monocyte expression data set from the Cardiogenics Transcriptomic Study (CTS) (Garnier et al., 2013). In this study, CD14+ monocytes were purified from 758 individuals (459 patients with coronary artery disease or myocardial infarction and 458 healthy individuals). We used matched genetic and expression data from this study from all 758 individuals to compute an independent set of CD14+ monocyte expression weights. 3163 genes were modelled with significant cis - heritable expression. 
+
+
+We used quality controlled CTS monocyte expression data : file EGAF00000183279/monocyte_expression_subset.txt. (Garnier et al., 2013) We extracted 
+20, 356 autosomal single gene probes and mapped them to the GRCh37 (hg19) genome assembly using the illumina_humanref_8_v3 annotation information using the Biomart package in R (URL.5), expression probes for were collapsed to  15, 344 genes using the 'collapseRows' function from the WGCA package (URL.6) using the MaxMean method (Miller et al., 2011) in R. Genetic data files Cardiogenics (CTS) data sets were aligned to the GRCh37 (hg19) using the Liftover tool (URL.7). Plink 1.9 (URL.8) was used for standard Quality-Control analysis (Anderson et al., 2010). Genetic data for all 758 individuals from the CTS study was used.SNPs were removed if their minor allele frequency (MAF) < 0.01, missingness of genotypes ≥ 0.02 or Hardy Weinberg equilibrium (HWE) < 10−6. For the CTS study, a total of 509, 870 SNPs were retained for 758 people.
+
+
+
 References
 
 Anderson CA, Pettersson FH, Clarke GM, Cardon LR, Morris AP, Zondervan KT. Data quality control in genetic case-control association studies. Nat Protoc 2010; 5: 1564–1573.
@@ -62,6 +73,8 @@ Anderson CA, Pettersson FH, Clarke GM, Cardon LR, Morris AP, Zondervan KT. Data 
 Fairfax BP, Humburg P, Makino S, Naranbhai V, Wong D, Lau E, Jostins L, Plant K, Andrews R, McGee C, et al. 2014. Innate Immune Activity Conditions the Effect of Regulatory Variants upon Monocyte Gene Expression. Science (80- ) 343: 1246949–1246949. http://www.ncbi.nlm.nih.gov/pubmed/24604202 
 
 Fairfax BP, Makino S, Radhakrishnan J, Plant K, Leslie S, Dilthey A, Ellis P, Langford C, Vannberg FO, Knight JC. 2012. Genetics of gene expression in primary immune cells identifies cell type-specific master regulators and roles of HLA alleles. Nat Genet 44: 502–10. http://www.ncbi.nlm.nih.gov/pubmed/22446964 .
+
+Garnier S, Truong V, Brocheton J, Zeller T, Rovital M, Wild PS, et al. Genome-Wide Haplotype Analysis of Cis Expression Quantitative Trait Loci in Monocytes. PLoS Genet 2013; 9: e1003240.
 
 Gusev A, Ko A, Shi H, Bhatia G, Chung W, Penninx BWJH, et al. Integrative approaches for large-scale transcriptome-wide association studies. Nat Genet 2016; 48: 245–52.
 
